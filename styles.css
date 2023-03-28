@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to bottom, #007bff, #4da6ff, #99c2ff);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+.card {
+    background: linear-gradient(to bottom, #fdfdfd, #ededed, #cecece);
+    border-radius: 10%;
+    width: 400px;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.suit-top{
+    font-size: 60px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.suit-bottom{
+    font-size: 60px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+
