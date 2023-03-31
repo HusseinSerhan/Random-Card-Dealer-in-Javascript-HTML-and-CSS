@@ -32,20 +32,35 @@ body {
 .value {
     font-size: 200px;
     font-weight: bold;
+    background-image: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .suit-top{
-    font-size: 60px;
+    font-size: 120px;
     position: absolute;
     top: 5%;
-    left: 5%;
+    left: 10%;
+    background-image: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .suit-bottom{
-    font-size: 60px;
+    font-size: 120px;
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 10%;
+    background-image: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 
