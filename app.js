@@ -4,19 +4,25 @@ const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'King', 'Queen', '
 const randomSuit = Math.floor(Math.random() * suits.length); 
 const randomValue = Math.floor(Math.random() * values.length); 
 
-
 // Replace elements 
-function replaceElement() {
-    const oldSuitTop = document.getElementsByClassName('suit-top');
-    const newSuitTop = document.createElement("span")
+function replaceSuitTop() {
+    const suits = ["♥", "♠", "♣", "♦"];
+    const firstSpan = document.querySelector(".card span:first-child"); 
+    const newSpan = document.createElement("span"); 
+    newSpan.textContent = suits[randomSuit]; 
+    newSpan.classList.add("suit-top");
+    firstSpan.replaceWith(newSpan)
+}
 
-    newSuitTop.classList.add("suit-top");
-    newSuitTop.innerHTML = suits[randomSuit];
-
-    oldSuitTop.replaceWith(newSuitTop);
-
+function replaceSuitBottom() {
+    const lastSpan = document.querySelector(".card span:last-child"); 
+    const newSpan = document.createElement("span"); 
+    newSpan.textContent = suits[randomSuit]; 
+    newSpan.classList.add("suit-bottom");
+    lastSpan.replaceWith(newSpan)
 }
 
 window.onload = function(){
-    replaceElement();
+    replaceSuitTop();
+    replaceSuitBottom();
 }
