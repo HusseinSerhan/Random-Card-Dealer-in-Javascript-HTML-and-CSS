@@ -80,3 +80,30 @@ img {
 #refresh-icon:hover {
     transform: scale(1.1);
   }
+
+/* Styles for mobile devices */
+@media only screen and (min-width: 320px) {
+    /* Add your CSS styles here */
+    .card {
+        width: 250px;
+        height: 450px;
+      }
+
+    img {
+        height: 250px;
+        width: 190px;
+      }
+
+    .value {
+        font-size: 125px;
+      }
+    
+    .suit-top {
+        font-size: 75px;
+      }
+
+    .suit-bottom {
+        font-size: 75px;
+      }
+
+  }
