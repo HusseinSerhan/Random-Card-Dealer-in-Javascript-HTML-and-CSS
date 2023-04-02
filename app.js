@@ -44,7 +44,7 @@ function replaceValue() {
 
 
 // Refresh Button
-document.getElementById("refresh-button").addEventListener("click", function() {
+document.getElementById("refresh-icon").addEventListener("click", function() {
     replaceSuit();
     replaceValue();
 });
