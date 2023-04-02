@@ -5,8 +5,6 @@ const values =
  './assets/vecteezy_queen-playing-card-character-sticker_.jpg', 
  './assets/vecteezy_jack-playing-card-character-sticker_.jpg'];
 
-const randomValue = Math.floor(Math.random() * values.length); 
-
 // Replace elements 
 function replaceSuit(){
     const randomSuit = Math.floor(Math.random() * suits.length); 
@@ -26,25 +24,24 @@ function replaceSuit(){
 
 // Replace Value
 function replaceValue() {
-    const card = document.querySelector(".card"); 
-    const valueElement = card.querySelector(".details .value");
+    let value = document.querySelector(".card .value");
+    const randomValue = Math.floor(Math.random() * values.length);
 
-
-    const value = values[Math.floor(Math.random() * values.length)]; 
-
-    if (isNaN(value)) { 
+    if (values[randomValue].includes("assets")) {
         const img = document.createElement("img");
-        img.src = value;
-        img.classList.add("value-img");
-        card.querySelector(".value").replaceWith(img);
-        randomValue = Math.floor(Math.random() * 8) + 9; 
+        img.src = values[randomValue];
+        img.classList.add("value");
+        value.replaceWith(img);
+        
     } else {
         const newValue = document.createElement("span"); 
-        newValue.textContent = value; 
+        newValue.textContent = values[randomValue]; 
         newValue.classList.add("value");
-        card.querySelector(".details .value").replaceWith(newValue);
+        value.replaceWith(newValue);
+        
     }
 }
+
 
 // Refresh Button
 document.getElementById("refresh-button").addEventListener("click", function() {
@@ -52,3 +49,45 @@ document.getElementById("refresh-button").addEventListener("click", function() {
     replaceValue();
 });
 
+
+
+
+
+
+
+
+
+// if (type (values[randomValue]) == 'string') {
+    // let newValue = document.createElement("span");
+    // newValue.textContent = values[randomValue];
+    // newValue.classList.add("value");
+    // initialValue.replaceWith(newValue);
+    // return;
+    // } else if (isNaN(values[randomValue])) 
+    //     {
+    //     const img = document.createElement("img");
+    //     img.src = values[randomValue];
+    //     img.classList.add("value-img");
+    //     initialValue.replaceWith(img);
+    //     return;
+    // }
+    // let newValue = document.createElement("span");
+    // newValue.textContent = values[randomValue];
+
+
+
+ // const card = document.querySelector(".card"); 
+    // const valueElement = card.querySelector(".details .value");
+
+    // if (isNaN(value)) { 
+    //     const img = document.createElement("img");
+    //     img.src = value;
+    //     img.classList.add("value-img");
+    //     card.querySelector(".value").replaceWith(img);
+    //     randomValue = Math.floor(Math.random() * 8) + 9; 
+    // } else {
+    //     const newValue = document.createElement("span"); 
+    //     newValue.textContent = value; 
+    //     newValue.classList.add("value");
+    //     card.querySelector(".details .value").replaceWith(newValue);
+    // }
