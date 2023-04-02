@@ -10,7 +10,7 @@ body {
   }
 
 .card {
-    background: linear-gradient(to bottom, #fdfdfd, #ededed, #cecece);
+    background: white;
     border-radius: 10%;
     width: 400px;
     height: 700px;
@@ -63,4 +63,26 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.value-img {
+    height: 400px;
+    width: 300px;
+  }
 
+button {
+    background: linear-gradient(to bottom, #007bff, #4da6ff, #99c2ff);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    transform: translateY(-50%);
+}
+  
+button:hover {
+    background: linear-gradient(to bottom, #00bfff, #73e0ff, #c1f0ff);
+    color: #fff; /* change text color to white */
+  }
