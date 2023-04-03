@@ -13,6 +13,8 @@ Here is a preview of the project:
 
 ### Live Demo
 You can view a live demo of the Random Card Generator at the following link:
+![Alt text for the GIF](./assets/RandomCardDealer.gif)
+
 
 [Click here to visit the live site](https://husseinserhan.github.io/Random-Card-Dealer-in-Javascript-HTML-and-CSS/)
 
@@ -22,7 +24,6 @@ You can view a live demo of the Random Card Generator at the following link:
 ### Features
 - Generates a random card every time the user presses a button.
 - Displays a number and an image on the card.
-- Allows for customization of the card's colors and font.
 
 ### Installation
 To use this project, follow these steps:
